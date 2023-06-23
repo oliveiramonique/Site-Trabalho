@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- link para usar os icones -->
+    <title>Localização - Happy Lounge Festas e Eventos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="Logo.png.png"> <!-- para colocar a logo no cabeçalho -->
+        </div>
+       
+       <nav class="navbar"> <!-- "Menu" do cabeçalho -->
+           <a href="home.html">home</a>
+           <a href="estrutura.html">Estrutura</a>
+           <a href="localização.html">localização</a>
+           <a href="orçamento.html">Orçamento</a>
+		   <a href="parceria.html">Parceria</a>
+           <a href="#footer">contato</a>
+        </nav>
+
+       <div class="icons"> <!-- adicionando o icone do whatsapp no cabeçalho -->
+           <a class="icone" href="https://api.whatsapp.com/send?phone=5551984713316" class="footer-link" id="whatsapp">
+             <i class="fa-brands fa-whatsapp"></i>
+           </a>
+		   
+		   <a href="sessao.html" class="btn">Login</a>
+       </div>
+   </header>
+   <section class="localizacao">
+    <h1>Localização</h1> <!-- título -->
+    <p class="p1">Horário de atendimento: Segunda a Sábado, das 10h às 19h.</p> <!-- parágrafo -->
+    <p class="p2" onmouseover="mOver(this)" onmouseout="mOut(this)" >Esperamos você para uma visita à Happy Lounge.</p> <!-- Evento java e parágrafo -->
+    <div class="google-maps"> <!-- link do google maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.4357567793063!2d-51.08544388520274!3d-29.995641735968174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951975ce7bea1dd1%3A0xe0d46a913b456c5d!2sHappy%20Lounge%20Festas%20e%20Eventos!5e0!3m2!1spt-BR!2sbr!4v1677242626116!5m2!1spt-BR!2sbr" width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+   </section>
+   <footer class="footer" id="footer"> <!-- rodapé -->
+    <div class="share">
+        <a href="https://www.instagram.com/happylounge_/" class="fab"> <!-- adicionando link do facebook -->
+          <i class="fa-brands fa-instagram"></i> <!-- adicionando o ícone -->
+        </a>
+        <a href="https://www.facebook.com/happylounge/?locale=pt_BR" class="fab"> <!-- adicionando link do insta-->
+          <i class="fa-brands fa-facebook-f"></i> <!-- adicionando o ícone -->
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5551984713316" class="fab"> <!-- adicionando link do Whats -->
+          <i class="fa-brands fa-whatsapp"></i> <!-- adicionando o ícone -->
+        </a>
+     </div>
+       <div class="links"> <!-- adicionando os links das páginas -->
+          <a href="home.html">home</a>
+          <a href="estrutura.html">Estrutura</a>
+          <a href="localização.html">localização</a>
+          <a href="orçamento.html">orçamento</a>
+		  <a href="parceria.html">Parceria</a>
+          <a href="#">contato</a>
+        </div>
+      <div class="credit">created by <span>Monique Oliveira</span></div>
+   </footer>
+   <script> /* Evento Java */
+    function mOver(obj) {
+      obj.innerHTML = "Agende sua visita!"
+    }
+    
+    function mOut(obj) {
+      obj.innerHTML = "Esperamos você para uma visita à Happy Lounge."
+    }
+   </script>
+</body>
+</html>

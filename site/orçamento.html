@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- link para usar os icones -->
+    <title>Orçamento - Happy Lounge Festas e Eventos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="Logo.png.png"> <!-- para colocar a logo no cabeçalho -->
+        </div>
+       
+       <nav class="navbar"> <!-- "Menu" do cabeçalho -->
+           <a href="home.html">home</a>
+           <a href="estrutura.html">Estrutura</a>
+           <a href="localização.html">localização</a>
+           <a href="orçamento.html">Orçamento</a>
+		   <a href="parceria.html">Parceria</a>
+           <a href="#footer">contato</a>
+        </nav>
+
+       <div class="icons"> <!-- adicionando o icone do whatsapp no cabeçalho -->
+           <a class="icone" href="https://api.whatsapp.com/send?phone=5551984713316" class="footer-link" id="whatsapp">
+             <i class="fa-brands fa-whatsapp"></i>
+           </a>
+		   
+		   <a href="sessao.html" class="btn">Login</a>
+       </div>
+   </header>
+   <section class="orcamento">
+        <form action="formulario 1.php" method="POST"> <!-- formulário -->
+
+            <h1>Peça o seu orçamento!</h1> <!-- título -->
+            <p>O mais breve retornaremos seu contato.</p> <!-- parágrafo -->
+
+            <label for="nome"><span><i class="fa-solid fa-circle-user"></i></span> Nome:</label>
+            <input type="text" id="nome" name="nome" class="form"
+            onblur="if(this.value == '') {this.value = 'digite aqui';}"
+            onfocus="if(this.value == 'digite aqui') {this.value = '';}"> <!-- eventos java -->
+
+            <label for="contato"><span><i class="fa-solid fa-phone"></i></span> Contato:</label>
+            <input type="tel" id="celular" name="celular" class="form" required placeholder= "(xx) xxxxx-xxxx"
+            onblur="if(this.value == '') {this.value = 'digite aqui';}" 
+            onfocus="if(this.value == 'digite aqui') {this.value = '';}"> <!-- eventos java -->
+
+            <label for="email"><span><i class="fa-solid fa-envelope"></i></span> E-mail:</label>
+            <input type="text" id="email" name="email" class="form"
+            onblur="if(this.value == '') {this.value = 'digite aqui';}" 
+            onfocus="if(this.value == 'digite aqui') {this.value = '';}"> <!-- eventos java -->
+			
+			<label for="data-festa"><span><i class="fa-solid fa-calendar-days"></i></span> Data da Festa:</label>
+            <input type="date" id="data" name="data" class="form">
+			
+			<label for="quantidade-pessoas"><span><i class="fa-solid fa-users"></i></span> Quantidade de Pessoas:</label>
+            <input type="number" id="convidados" name="convidados" class="form">
+
+            <label for="tipo-festa"><span><i class="fa-solid fa-champagne-glasses"></i></span> Tipo de Evento:</label>
+			<input type="text" name="tipo" id="tipo" class="form">
+
+            <input type="submit" onclick="alert('Enviado com sucesso! Logo entraremos em contato.')" value="Enviar"> <!-- adicionando um evento Java -->
+	    </form>
+   </section>
+   <footer class="footer" id="footer"> <!-- rodapé -->
+    <div class="share">
+        <a href="https://www.instagram.com/happylounge_/" class="fab"> <!-- adicionando link do facebook -->
+          <i class="fa-brands fa-instagram"></i> <!-- adicionando o ícone -->
+        </a>
+        <a href="https://www.facebook.com/happylounge/?locale=pt_BR" class="fab"> <!-- adicionando link do insta-->
+          <i class="fa-brands fa-facebook-f"></i> <!-- adicionando o ícone -->
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5551984713316" class="fab"> <!-- adicionando link do Whats -->
+          <i class="fa-brands fa-whatsapp"></i> <!-- adicionando o ícone -->
+        </a>
+      </div>
+      <div class="links"> <!-- adicionando os links das páginas -->
+        <a href="home.html">home</a>
+        <a href="estrutura.html">Estrutura</a>
+        <a href="localização.html">localização</a>
+        <a href="orçamento.html">orçamento</a>
+		<a href="parceria.html">Parceria</a>
+        <a href="#">contato</a>
+     </div>
+    <div class="credit">created by <span>Monique Oliveira</span></div>
+   </footer>
+</body>
+</html>
