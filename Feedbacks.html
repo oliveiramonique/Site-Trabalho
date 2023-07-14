@@ -1,0 +1,140 @@
+<?php
+	require_once("sessao_testa_sessao.php");
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css"> <!-- link css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- link para usar os icones -->
+    <title>Happy Lounge Festas e Eventos</title>
+</head>
+<body onload="checkCookies()"> <!-- evento java -->
+<?php
+	require_once("sessao_opcoes.php");
+?>
+    <header class="header">
+         <div class="logo">
+             <img src="logo happy.png"> <!-- para colocar a logo no cabeçalho -->
+         </div>
+        
+        <nav class="navbar"> <!-- "Menu" do cabeçalho -->
+            <a href="home.html">home</a> <!-- adicionando os links das páginas -->
+            <a href="estrutura.html">Estrutura</a>
+            <a href="localização.html">localização</a>
+            <a href="orçamento.html">Orçamento</a>
+			<a href="parceria.html">Parceria</a>
+            <a href="#footer">contato</a>
+         </nav>
+
+        <div class="icons"> <!-- adicionando o ícone do whatsapp no cabeçalho -->
+            <a class="icone" href="https://api.whatsapp.com/send?phone=5551984713316" class="footer-link" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+			
+			<a href="sessao_sair.php" class="btn">Sair</a>
+        </div>
+		
+    </header>
+
+    <section class="home" id="home">
+        <div class="title"> <!-- nome e frase de efeito -->
+            <h3>Happy Lounge Festas e Eventos</h3>
+            <p>"Um lugar especial para momentos inesquecíveis"</p>
+            <a href="orçamento.html" class="btn">faça um orçamento</a> <!-- adicionando um link-->
+         </div>
+    </section>
+
+    <section class="estru">
+        <div class="row">
+            <div class="image"> <!-- adicionando uma imagem -->
+                <img src="https://scontent.fpoa10-1.fna.fbcdn.net/v/t39.30808-6/279214476_3325436004401320_1829490220498344106_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_ohc=hh5Cc6HfZ58AX9udR_J&_nc_ht=scontent.fpoa10-1.fna&oh=00_AfDFyplPGf1hqIkQbVtjaos65pTXTaPQTcF_AVq-QjtEFQ&oe=64AE5725" alt="">
+            </div>
+            <div class="estrutura-title"> <!-- título e parágrafo -->
+                <h2 onclick="this.innerHTML = 'Agende sua visita!'">A melhor opção para a sua festa ser inesquecível!</h2>
+                <p>A Happy Lounge possui dois ambientes lindos e estrutura completa para receber você e todos os seus convidados. Nós oferecemos equipe de garçons, recepcionista, copeira, gerente de festa, segurança, DJ e tudo que for necessário para você não se preocupar com nada durante a festa.</p>
+                <a href="estrutura.html" class="btn">conheça nossa estrutura</a> <!-- adicionando um link -->
+            </div>
+        </div>
+    </section>
+
+    <section class="section4">
+        <h1>Feedbacks</h1>
+		    <div class="estrutura-title"> <!-- título e parágrafo -->
+                <a href="edite.html" class="btn">Edite um Feedback</a> <!-- adicionando um link -->
+            </div>
+
+        <div class="clientes">
+            <div class="paragrafo">
+                <div class="info">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <p>Melhor lugar do mundo para realizar um sonho é neste lugar, inexplicável o carinho que eles te oferecem!! Muito obrigada por todo esforço e carinho, equipe top!!</p>
+                <h4>Julinha</h4>
+                <div class="star"> <!-- adicionando os ícones -->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+            </div>
+
+            <div class="paragrafo">
+                <div class="info">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <p>Carinho, dedicação e comprometimento são muitas as palavras que servem de adjetivos a essa equipe que me permitiu ter um ou o mais emocionante momento da minha vida.</p>
+                <h4>Heron Scotta</h4>
+                <div class="star"> <!-- adicionando os ícones -->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+            </div>
+
+            <div class="paragrafo">
+                <div class="info">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <p>Nunca vou me areepender de ter escolhido o salão Happy Lounge para realizar o meu sonho, foi tudo pefeito, mais do que imaginava e a equipe é super top sem dizer a recepção que a Elaine tem com os clientes!</p>
+                <h4>Juh Alburquerque</h4>
+                <div class="star"> <!-- adicionando os ícones -->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer"> <!-- rodapé -->
+        <div class="share">
+            <a href="https://www.instagram.com/happylounge_/" class="fab"> <!-- adicionando link do facebook -->
+              <i class="fa-brands fa-instagram"></i> <!-- adicionando o ícone -->
+            </a>
+            <a href="https://www.facebook.com/happylounge/?locale=pt_BR" class="fab"> <!-- adicionando link do insta-->
+              <i class="fa-brands fa-facebook-f"></i> <!-- adicionando o ícone -->
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5551984713316" class="fab"> <!-- adicionando link do Whats -->
+              <i class="fa-brands fa-whatsapp"></i> <!-- adicionando o ícone -->
+            </a>
+          </div>
+          <div class="links"> <!-- adicionando os links das páginas -->
+            <a href="home.html">home</a>
+            <a href="estrutura.html">Estrutura</a>
+            <a href="localização.html">localização</a>
+            <a href="orçamento.html">orçamento</a>
+			<a href="parceria.html">Parceria</a>
+            <a href="#">contato</a>
+        </div>
+        <div class="credit">created by <span>Monique Oliveira</span></div>
+    </footer>
+</body>
+</html>
