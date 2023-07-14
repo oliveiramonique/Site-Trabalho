@@ -1,0 +1,366 @@
+/*importando as fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Rokkitt:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Raleway:ital,wght@1,100&display=swap');
+
+*{ /*tirando o codigo padrão*/
+    font-family: 'Roboto', serif; /*adicionando a fonte*/
+    margin:0; padding:0; /*tirando a margem e os espaços*/
+    box-sizing: border-box; /*não calcula a dimensão de um elemento somando bordas e margens com altura e largura*/
+    outline: none; border:none; /*tirando todas as bordas padrão*/
+    text-decoration: none; /*para tirar as linhas*/
+    text-transform: capitalize; /* transformar as primeiras letras das palavras em maiúscula */
+    transition: .2s linear; /*para dar um efeito quando passar o mouse*/
+}
+
+body{
+    background-color: #010103; /*mudando a cor de fundo*/
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{ /*arrumando a rolagem*/
+    width: .8rem; 
+}
+html::-webkit-scrollbar-track{ /*arrumando a rolagem*/
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{ /*arrumando a rolagem*/
+    background: #fff; /*adicionando a cor*/
+    border-radius: 5rem; /*deixando arredondada*/
+}
+
+.header{
+    display: flex;
+    background-color: #010103;/*mudando a cor de fundo*/
+    align-items: center; /*para centralizar todos os itens*/
+    justify-content: space-between; /*para dar um espaçamento entre logo e links*/
+    padding:1.5rem 7%; /*para dar uma afastada do topo*/
+    position: fixed; /*para que fique fixo*/
+    top:0; left: 0; right: 0;
+}
+.header .logo img{
+    height: 6rem; /*para definir o tamanho da logo*/
+}
+
+/*estilizando os links*/
+nav{
+    display: flex;
+    gap: 3rem; /*para dar uma afastada*/
+}
+.navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem; /*tamanho das fontes*/
+    color:#fff; /*cor dos links*/
+}
+.navbar a:hover{
+    color: #e09942; /*cor quando passar o mouse*/
+    border-bottom: .1rem solid #e09942; 
+    padding-bottom: .5rem; /*distância do elemento para sua própria borda*/
+}
+
+/*estilizando os icones*/
+.icons{
+    margin-right: 5rem; /*define a margem*/
+}
+.icone{
+    color: #e09942; /*cor do icone*/
+    font-size: 3rem; /*tamanho do icone*/
+
+}
+
+/*estilizando o primeiro section*/
+.home{
+    display: flex;
+    min-height: 100vh; /*para ter uma altura total de página responsiva*/
+    align-items: center; /* para a imagem ficar centralizada */
+    background:url(https://scontent.fpoa10-1.fna.fbcdn.net/v/t39.30808-6/295723722_479908897473123_4507712268905400434_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=U57EiWhqsUoAX8bmVwO&_nc_ht=scontent.fpoa10-1.fna&oh=00_AfDoHx-aLRn7IVp-D11q7xPr4FBlYBU_0QR-QxaccvnmsA&oe=649F6F0F) no-repeat;  /* adicionando imagem de fundo e não repetir */
+    background-size: cover; /* para a imagem preencher tudo */
+    background-position: center; /* para ficar centralizada */
+}
+.home .title{ /*definindo a largura máxima e as margens*/
+    max-width: 60rem;
+    margin-left: 5rem;
+    margin-top: 10rem;
+}
+.home .title h3{
+    font-family: 'Montserrat', sans-serif; /*adicionando a fonte*/
+    font-size: 5rem; /*tamanho da fonte*/
+    text-transform: uppercase; /*para deixar as letras maiúsculas*/
+    color:#fff; /*adicionando a cor da fonte*/
+    text-shadow: 1px 0px 10px #262627; /*adicionando sombreado na fonte*/
+}
+.home .title p{
+    font-size: 2rem; /*tamanho da fonte*/
+    font-weight: lighter; /*intensidade da fonte, mais claro que o elemento pai*/
+    line-height: 1.8; /*espaçamento entre as linhas do texto*/
+    padding:1rem 0;
+    color:#eee; /*adicionando a cor da fonte*/
+    text-shadow: 1px 0px 10px #141414; /*adicionando sombreado na fonte*/
+}
+.btn{/*botão*/
+    margin-top: 1rem; /* para afastar um pouco da margem superior*/
+    display: inline-block;
+    padding:.9rem 3rem; /*para afastar da letra*/
+    font-size: 1.7rem; /*tamanho da fonte*/
+    color:#fff; /*definir a cor da fonte*/
+    background-color: #cf8a34; /*adicionando a cor*/
+}
+.btn:hover{
+    letter-spacing: .2rem; /*para controlar o espaço entre as letras*/
+}
+
+/*estilizando o segundo section*/
+.estru{
+    padding: 5rem; /*para definir a distância do conteúdo e as bordas*/
+}
+.estru .row{
+    display: flex;
+    align-items: center; /* para ficar no centro*/
+    background-color: #13131a;/*adicionando a cor de fundo*/
+    flex-wrap: wrap; /*para quebrar as linhas*/
+}
+.estru .row .image{
+    flex:1 1 45rem;
+}
+.estru .row .image img{
+    width: 100%;
+}
+.estru .row .estrutura-title{
+    flex:1 1 45rem;
+    padding:2rem;  /*para definir a distância do conteúdo e as bordas*/
+}
+.estru .row .estrutura-title h2{
+    font-family: 'Raleway', sans-serif; /*adicionando a fonte*/
+    align-items: center; /* para ficar no centro*/
+    font-weight: lighter; /*intensidade da fonte, mais claro que o elemento pai*/
+    text-transform: none; /*para retirar o padrão das primeiras letras das palavras em maiúscula */
+    font-size: 4rem; /*tamanho da fonte*/
+    color:#fff; /*definir a cor da fonte*/
+}
+.estru .row .estrutura-title p{
+    font-size: 1.6rem; /*tamanho da fonte*/
+    text-transform: none; /*para retirar o padrão das primeiras letras das palavras em maiúscula */
+    color:#ccc; /*definir a cor da fonte*/
+    padding:1rem 0;  /*para definir a distância do conteúdo e as bordas*/
+    line-height: 1.8;
+}
+
+/*estilizando o quarto section*/
+.section4 h1{
+    align-items: center; /* para ficar no centro*/
+    text-align: center; /* para ficar no centro*/
+    color: #e09942; /*definir a cor da fonte*/
+    font-size: 4rem; /*tamanho da fonte*/
+    margin-top: 3rem; /*define a margem na parte superior*/
+    font-family: 'Raleway', sans-serif; /*adicionando a fonte*/
+
+}
+.clientes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* para ficar no centro*/
+    text-align: center; /* para ficar no centro*/
+    padding: 3rem;  /*para definir a distância do conteúdo e as bordas*/
+}
+.paragrafo{
+    border: solid 1px #e09942; /*definir a cor da fonte*/
+    padding: 3rem;  /*para definir a distância do conteúdo e as bordas*/
+    width: 28rem;
+    margin-bottom: 2rem; /*define a margem na parte inferior*/
+}
+.info{
+    color: #e09942; /*definir a cor*/
+    font-size: 4rem; /*tamanho da fonte*/
+}
+.paragrafo p{
+    color: #fff; /*definir a cor da fonte*/
+    font-size: 1.7rem; /*tamanho da fonte*/
+    margin-top: 1rem; /*define a margem na parte superior*/
+    text-transform: none; /*para retirar o padrão das primeiras letras das palavras em maiúscula */
+    font-weight: lighter; /*intensidade da fonte, mais claro que o elemento pai*/
+}
+.paragrafo h4{
+    color: #ffffff; /*definir a cor da fonte*/
+    margin-top: 2rem; /*define a margem na parte superior*/
+    font-size: 2rem; /*tamanho da fonte*/
+    font-family: 'Rokkitt', serif; /*adicionando a fonte*/
+}
+.star{
+    color: #e09942; /*definir a cor da fonte*/
+    font-size: 1.5rem; /*tamanho da fonte*/
+    padding-top: 2rem;  /*para definir a distância do conteúdo e as bordas no topo*/
+}
+
+
+/*estilizando o footer*/
+.footer{
+    background-color: #13131a;
+    text-align: center; /* para ficar no centro*/
+}
+.footer .share{
+    padding:1rem 0;  /*para definir a distância do conteúdo e as bordas*/
+}
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem; /*tamanho da fonte*/
+    color:#fff; /*definir a cor da fonte*/
+    border:.1rem solid rgba(255,255,255,.3);
+    margin:.3rem; /*define as margens*/
+    border-radius: 50%;
+}
+.footer .share a:hover{
+    background-color: #e09942;
+}
+.footer .links{
+    display: flex;
+    justify-content: center;/*para alinhar os elemnetos no centro*/
+    flex-wrap: wrap;
+    padding:2rem 0; /*para definir a distância do conteúdo e as bordas*/
+    gap:1rem;
+}
+.footer .links a{
+    padding:.7rem 2rem;  /*para definir a distância do conteúdo e as bordas*/
+    color:#fff; /*definir a cor da fonte*/
+    border:.1rem solid rgba(255,255,255,.3);
+    font-size: 2rem; /*tamanho da fonte*/
+}
+.footer .links a:hover{
+    background-color: #e09942;
+}
+.footer .credit{
+    font-size: 2rem; /*tamanho da fonte*/
+    color:#fff; /*definir a cor da fonte*/
+    font-weight: lighter; /*intensidade da fonte, mais claro que o elemento pai*/
+    padding:1.5rem;  /*para definir a distância do conteúdo e as bordas*/
+}
+.footer .credit span{
+    color:#e09942; /*definir a cor da fonte*/
+}
+
+/*estilizando a localização*/
+.localizacao{
+    align-items: center; /* para ficar no centro*/
+    text-align: center; /* para ficar no centro*/
+    margin-top: 10rem; /*define a margem na parte superior*/
+}
+.localizacao h1{
+    color: #e09942; /*definir a cor da fonte*/
+    font-size: 4rem; /*tamanho da fonte*/
+    font-family: 'Raleway', sans-serif; /*adicionando a fonte*/
+}
+.localizacao p{
+    color:#ccc; /*definir a cor da fonte*/
+    font-size: 2rem; /*tamanho da fonte*/
+    font-weight: lighter; /*intensidade da fonte, mais claro que o elemento pai*/
+    text-transform: none; /*para retirar o padrão das primeiras letras das palavras em maiúscula */
+}
+.localizacao .p1{
+    padding-top: 2rem;  /*para definir a distância do conteúdo e as bordas no topo*/
+}
+.localizacao .p2{
+    padding-bottom: 2rem; /*define a distância na parte inferior*/
+}
+.localizacao .google-maps{
+    margin-bottom: 5rem; /*define a margem na parte inferior*/
+}
+
+/*estilizando o formulário*/
+form {
+    margin-top: 13rem; /*define a margem na parte superior*/
+    margin-bottom: 5rem; /*define a margem na parte inferior*/
+    margin-left: auto; /*define a margem na esquerda e direita*/
+    margin-right: auto;
+    max-width: 400px;
+    background-color: #19191a;
+    padding: 3rem;  /*para definir a distância do conteúdo e as bordas*/
+    border-radius: 10px;/*arredondar as bordas*/
+    font-size: 2rem;/*tamanho das fontes*/
+    letter-spacing: .1rem; /*para controlar o espaço entre as letras*/
+    font-family: 'Montserrat', sans-serif; /*adicionando a fonte*/
+    font-weight: lighter; /*intensidade da fonte, mais claro que o elemento pai*/
+    color: #fff; /*definir a cor da fonte*/
+}
+form h1{
+    color: #e09942; /*definir a cor da fonte*/
+    text-align: center; /* para ficar no centro*/
+    font-family: 'Raleway', sans-serif; /*adicionando a fonte*/
+    text-transform: none; /*para retirar o padrão das primeiras letras das palavras em maiúscula */
+    margin-bottom: 1rem; /*define a margem na parte inferior*/
+}
+
+
+form p{
+    text-align: center; /* para ficar no centro*/
+    font-size: 1.7rem; /*tamanho da fonte*/
+    text-transform: none; /*para retirar o padrão das primeiras letras das palavras em maiúscula */
+    margin-bottom: 2rem; /*define a margem na parte inferior*/
+}
+form span{
+    font-size: 1.7rem; /*tamanho da fonte*/
+    color: #ffffff71; /*definir a cor*/
+}
+label {
+    display: block;
+    margin-bottom: 5x; /*define a margem na parte inferior*/
+}
+.form{
+    width: 100%;
+    padding: 6px;  /*para definir a distância do conteúdo e as bordas*/
+    margin-bottom: 10px; /*define a margem na parte inferior*/
+    border: none;
+    border-radius: 5px; /*arredonar as bordas*/
+	text-align: center; /* para ficar no centro*/
+}
+input[type=submit] {
+    background-color: #e09942;
+    color: white; /*definir a cor da fonte*/
+    padding: 10px 20px;  /*para definir a distância do conteúdo e as bordas*/
+    border: none;
+    border-radius: 5px; /*arredondar as bordas*/
+    font-size: 16px; /*tamanho da fonte*/
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #df9204; 
+}
+
+/*estilizando a estrutura*/
+.section3 h2{
+    color:#e09942; /*definir a cor da fonte*/
+    font-size: 4rem; /*tamanho da fonte*/
+    flex:1 1 45rem;
+    font-weight: lighter; /*intensidade da fonte, mais claro que o elemento pai*/
+    align-items: center; /* para ficar no centro*/
+    text-align: center; /* para ficar no centro*/
+}
+.section3 .primeiro{
+    padding-top:10rem;  /*para definir a distância do conteúdo e as bordas no topo*/
+}
+.section3 .segundo{
+    padding-top:1rem;
+}
+.section3 p{
+    color: #ccc; /*definir a cor da fonte*/
+    font-size: 2rem; /*tamanho da fonte*/
+    padding:1rem 0;
+    line-height: 1.8; /*controlar o espaçamento entre as linhas de um texto*/
+    align-items: center; /* para ficar no centro*/
+    text-align: center; /* para ficar no centro*/
+}
+#icon{
+    color: #cf8a34;  /*definir a cor*/
+}
+
+.login{
+	    color: #fff; /*definir a cor da fonte*/
+		text-align: center; /* para ficar no centro*/
+}
